@@ -2,15 +2,12 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Ayoub Dev</title>
+    <title>Ayoub Dev | Python Developer</title>
 
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
@@ -22,52 +19,74 @@
         <h1>Ayoub Dev</h1>
 
         <nav>
-
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#services">Services</a>
-            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
-
         </nav>
 
     </header>
 
 
-    <!-- ================= HERO ================= -->
+    <!-- ================= HERO SECTION ================= -->
 
     <section class="hero" id="home">
 
         <div class="hero-text">
 
-            <h2>Hello, I'm Muhammad Ayoub</h2>
+            <span class="hero-label">
+                WELCOME TO MY PORTFOLIO
+            </span>
+
+            <h2>
+                Hi, I'm <span>Muhammad Ayoub</span>
+            </h2>
+
+            <h3>
+                Python Developer & Data Science Student
+            </h3>
 
             <p>
-                Python Developer | AI Enthusiast | Data Science Student
+                I build modern websites, Python applications,
+                backend solutions and data-driven projects.
             </p>
 
-            <button>Hire Me</button>
+            <div class="hero-buttons">
 
-            <button onclick="downloadCV()">
-                Download CV
-            </button>
+                <button
+                    onclick="document.getElementById('contact').scrollIntoView()">
+                    Hire Me
+                </button>
+
+                <button
+                    class="cv-button"
+                    onclick="downloadCV()">
+                    Download CV
+                </button>
+
+            </div>
 
         </div>
 
 
         <div class="hero-image">
 
-            <img
-                src="images/profile.jpeg"
-                alt="Muhammad Ayoub"
-            >
+            <div class="image-circle">
+
+                <img
+                    src="images/profile.jpeg"
+                    alt="Muhammad Ayoub"
+                >
+
+            </div>
 
         </div>
 
     </section>
 
 
-    <!-- ================= ABOUT ================= -->
+    <!-- ================= ABOUT SECTION ================= -->
 
     <section class="about" id="about">
 
@@ -77,7 +96,7 @@
 
                 <img
                     src="images/profile.jpeg"
-                    alt="About Muhammad Ayoub"
+                    alt="Muhammad Ayoub"
                 >
 
             </div>
@@ -85,19 +104,46 @@
 
             <div class="about-text">
 
-                <h2>About Me</h2>
+                <span class="about-label">
+                    ABOUT ME
+                </span>
+
+                <h2>
+                    Python Developer & Data Science Student
+                </h2>
 
                 <p>
-                    My name is Muhammad Ayoub. I am a Python Developer,
-                    AI Enthusiast and Data Science Student.
+                    I am Muhammad Ayoub, a Python Developer and
+                    Data Science student passionate about building
+                    useful and modern technology solutions.
                 </p>
 
                 <p>
-                    I build responsive websites, Python applications,
-                    and AI-powered projects.
+                    I work with Python, Data Science, Machine Learning,
+                    Web Development and Backend technologies. I enjoy
+                    learning new technologies and turning ideas into
+                    practical applications.
                 </p>
 
-                <button>Read More</button>
+
+                <div class="about-info">
+
+                    <div>
+                        <strong>Name:</strong>
+                        <span>Muhammad Ayoub</span>
+                    </div>
+
+                    <div>
+                        <strong>Role:</strong>
+                        <span>Python Developer</span>
+                    </div>
+
+                    <div>
+                        <strong>Field:</strong>
+                        <span>Data Science</span>
+                    </div>
+
+                </div>
 
             </div>
 
@@ -106,20 +152,25 @@
     </section>
 
 
-    <!-- ================= SERVICES ================= -->
+    <!-- ================= SERVICES SECTION ================= -->
 
     <section class="services" id="services">
 
-        <h2>My Services</h2>
+        <h2>
+            My Services
+        </h2>
 
         <div class="service-container">
 
             <div class="service-card">
 
-                <h3>Web Development</h3>
+                <h3>
+                    Web Development
+                </h3>
 
                 <p>
-                    I create responsive and modern websites.
+                    I create responsive and modern websites
+                    using HTML, CSS and JavaScript.
                 </p>
 
             </div>
@@ -127,10 +178,13 @@
 
             <div class="service-card">
 
-                <h3>Python Development</h3>
+                <h3>
+                    Python Development
+                </h3>
 
                 <p>
-                    I develop Python applications and automation tools.
+                    I develop Python applications,
+                    automation tools and backend solutions.
                 </p>
 
             </div>
@@ -138,10 +192,13 @@
 
             <div class="service-card">
 
-                <h3>AI & Machine Learning</h3>
+                <h3>
+                    AI & Machine Learning
+                </h3>
 
                 <p>
-                    I build AI-powered solutions using Python.
+                    I build AI and Machine Learning
+                    solutions using Python.
                 </p>
 
             </div>
@@ -151,77 +208,96 @@
     </section>
 
 
-    <!-- ================= PROJECTS ================= -->
+    <!-- ================= SKILLS SECTION ================= -->
 
-    <section class="projects" id="projects">
+    <section class="skills" id="skills">
 
-        <h2>My Projects</h2>
+        <h2>
+            My Skills
+        </h2>
 
-        <div class="project-container">
+        <div class="skills-container">
 
+            <div class="skill-card">
 
-            <!-- Project 1 -->
-
-            <div class="project-card">
-
-                <div class="project-icon">
-                    💻
-                </div>
-
-                <h3>Portfolio Website</h3>
+                <h3>
+                    Python
+                </h3>
 
                 <p>
-                    A modern personal portfolio website
-                    built using HTML and CSS.
+                    Python programming, functions, loops
+                    and problem solving.
                 </p>
-
-                <button onclick="showProject('Portfolio Website')">
-                    View Project
-                </button>
 
             </div>
 
 
-            <!-- Project 2 -->
+            <div class="skill-card">
 
-            <div class="project-card">
-
-                <div class="project-icon">
-                    🎓
-                </div>
-
-                <h3>Student Management System</h3>
+                <h3>
+                    Web Development
+                </h3>
 
                 <p>
-                    A student management application
-                    developed using Python.
+                    HTML, CSS and JavaScript for
+                    responsive websites.
                 </p>
-
-                <button onclick="showProject('Student Management System')">
-                    View Project
-                </button>
 
             </div>
 
 
-            <!-- Project 3 -->
+            <div class="skill-card">
 
-            <div class="project-card">
-
-                <div class="project-icon">
-                    🤖
-                </div>
-
-                <h3>AI Chatbot</h3>
+                <h3>
+                    Data Science
+                </h3>
 
                 <p>
-                    An AI chatbot project developed
-                    using Python.
+                    NumPy, Pandas, data analysis
+                    and visualization.
                 </p>
 
-                <button onclick="showProject('AI Chatbot')">
-                    View Project
-                </button>
+            </div>
+
+
+            <div class="skill-card">
+
+                <h3>
+                    Machine Learning
+                </h3>
+
+                <p>
+                    Basic machine learning concepts
+                    and models using Python.
+                </p>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <h3>
+                    Backend Development
+                </h3>
+
+                <p>
+                    Flask, REST APIs and
+                    database integration.
+                </p>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <h3>
+                    Database
+                </h3>
+
+                <p>
+                    MySQL and PostgreSQL
+                    database management.
+                </p>
 
             </div>
 
@@ -230,77 +306,166 @@
     </section>
 
 
-    <!-- ================= CONTACT ================= -->
+    <!-- ================= CONTACT SECTION ================= -->
 
     <section class="contact" id="contact">
 
-        <h2>Contact Me</h2>
+        <div class="contact-container">
+
+            <!-- Contact Heading -->
+
+            <div class="contact-heading">
+
+                <span>
+                    GET IN TOUCH
+                </span>
+
+                <h2>
+                    Let's Work Together
+                </h2>
+
+                <p>
+                    Have a project idea or want to discuss
+                    an opportunity? Feel free to contact me.
+                </p>
+
+            </div>
 
 
-        <form>
+            <!-- Contact Content -->
 
-            <input
-                type="text"
-                placeholder="Enter Your Name"
-            >
-
-            <input
-                type="email"
-                placeholder="Enter Your Email"
-            >
-
-            <textarea
-                placeholder="Write Your Message"
-            ></textarea>
-
-            <button type="submit">
-                Send Message
-            </button>
-
-        </form>
+            <div class="contact-content">
 
 
-        <p>
-            Email: letsmuhammadayoub@gmail.com
-        </p>
+                <!-- Contact Information -->
 
-        <p>
-            Phone: +92 301262911
-        </p>
+                <div class="contact-info">
 
 
-        <!-- ================= SOCIAL LINKS ================= -->
+                    <div class="contact-item">
 
-        <div class="social-links">
+                        <div class="contact-icon">
+                            ✉️
+                        </div>
 
-            <a
-                href="https://www.linkedin.com/in/muhammad-ayoub-97ab06416"
-                target="_blank"
-            >
-                LinkedIn
-            </a>
+                        <div>
+
+                            <h3>
+                                Email
+                            </h3>
+
+                            <p>
+                                letsmuhammadayoub@gmail.com
+                            </p>
+
+                        </div>
+
+                    </div>
 
 
-            <a
-                href="https://github.com/letsmuhammadayoub-eng"
-                target="_blank"
-            >
-                GitHub
-            </a>
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            📱
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Phone
+                            </h3>
+
+                            <p>
+                                +92 301262911
+                            </p>
+
+                        </div>
+
+                    </div>
 
 
-            <a
-                href="mailto:letsmuhammadayoub@gmail.com"
-            >
-                Email
-            </a>
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            📍
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Location
+                            </h3>
+
+                            <p>
+                                Pakistan
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Social Links -->
+
+                    <div class="social-links">
+
+                        <a
+                            href="https://www.linkedin.com/in/muhammad-ayoub-97ab06416"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            LinkedIn
+                        </a>
+
+                        <a
+                            href="https://github.com/letsmuhammadayoub-eng"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub
+                        </a>
+
+                        <a
+                            href="mailto:letsmuhammadayoub@gmail.com"
+                        >
+                            Email
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Contact Form -->
+
+                <form class="contact-form">
+
+                    <input
+                        type="text"
+                        placeholder="Your Name"
+                        required
+                    >
+
+                    <input
+                        type="email"
+                        placeholder="Your Email"
+                        required
+                    >
+
+                    <textarea
+                        placeholder="Your Message"
+                        required
+                    ></textarea>
+
+                    <button type="submit">
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
 
         </div>
-
-
-        <p>
-            Location: Pakistan
-        </p>
 
     </section>
 
@@ -309,7 +474,9 @@
 
     <footer>
 
-        <h3>Ayoub Dev</h3>
+        <h3>
+            Ayoub Dev
+        </h3>
 
         <p>
             Python Developer | AI Enthusiast | Web Developer

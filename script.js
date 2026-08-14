@@ -1,15 +1,56 @@
-const hireButton = document.querySelector(".hero button");
-
-hireButton.addEventListener("click", function () {
-    document.querySelector("#contact").scrollIntoView({
-        behavior: "smooth"
-    });
-});
+// ===============================
+// DOWNLOAD CV
+// ===============================
 
 function downloadCV() {
-    window.open("Muhammad-Ayoub-CV.pdf", "_blank");
+    window.open("Muhammad_Ayoub_CV.pdf", "_blank");
 }
 
-function showProject(projectName) {
-    alert("You selected: " + projectName);
-}
+
+// ===============================
+// PROJECT BUTTON
+// ===============================
+
+
+
+
+// ===============================
+// CONTACT FORM
+// ===============================
+
+const contactForm = document.querySelector(".contact form");
+
+contactForm.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    const name = document.querySelector(
+        '.contact input[type="text"]'
+    ).value;
+
+    const email = document.querySelector(
+        '.contact input[type="email"]'
+    ).value;
+
+    const message = document.querySelector(
+        ".contact textarea"
+    ).value;
+
+
+    if (name === "" || email === "" || message === "") {
+
+        alert("Please fill all fields.");
+
+        return;
+    }
+
+
+    alert(
+        "Thank you " + name +
+        "!\n\nYour message has been received."
+    );
+
+
+    contactForm.reset();
+
+});
