@@ -8,49 +8,24 @@ function downloadCV() {
 
 
 // ===============================
-// PROJECT BUTTON
-// ===============================
-
-
-
-
-// ===============================
 // CONTACT FORM
 // ===============================
 
-const contactForm = document.querySelector(".contact form");
+const contactForm = document.querySelector(".contact-form");
 
-contactForm.addEventListener("submit", function(event) {
+if (contactForm) {
 
-    event.preventDefault();
+    contactForm.addEventListener("submit", function () {
 
-    const name = document.querySelector(
-        '.contact input[type="text"]'
-    ).value;
+        const name = contactForm.querySelector(
+            'input[name="name"]'
+        ).value;
 
-    const email = document.querySelector(
-        '.contact input[type="email"]'
-    ).value;
+        alert(
+            "Thank you " + name +
+            "!\n\nYour message is being sent."
+        );
 
-    const message = document.querySelector(
-        ".contact textarea"
-    ).value;
+    });
 
-
-    if (name === "" || email === "" || message === "") {
-
-        alert("Please fill all fields.");
-
-        return;
-    }
-
-
-    alert(
-        "Thank you " + name +
-        "!\n\nYour message has been received."
-    );
-
-
-    contactForm.reset();
-
-});
+}
